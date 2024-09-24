@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="registration.css">
+    <!--<script src="../js/registration.js" defer></script>-->
+   
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="header">
+                <img src="icon-of-shop.png" alt="">
+            </div>
+            <div class="header" id="search">
+                <img src="loop.png">
+                <input type="search" placeholder="Введите ваш запрос">
+                <button>Найти</button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/addresses">Адреса</a></li>
+                <li><a href="/catalog">Каталог</a></li>
+                <li><a href="/avtorization">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="registration-form" class="registration-form" method="post" >
+            <h2>Регистрация</h2><br>
+            <label for="user_name">Имя пользователя</label><br>
+            <input type="text" name="user_name" id="user_name" title="Не используйте !%^&*$#" required><br><br>
+
+            <label for="user_phone">Номер телефона</label><br>
+            <input type="text" placeholder="+375 XX XXXXXXX" maxlength="13" name="user_phone" id="user_phone" required><br><br>
+
+            <label for="password">Пароль</label><br>
+            <input type="password" name="password" id="password" title="Должен содержать как минимум 6 символов" required><br><br>
+
+            <label for="repass">Повторите пароль</label><br>
+            <input type="password" name="repass" id="repass" title="Должен содержать как минимум 6 символов" required><br><br>
+
+            <div id="error" name="error"></div>
+
+            <input type="submit" class="button" name="submit" value="Готово">
+            <!-- <button type="submit">Зарегистрироваться</button> -->
+        </form>
+    </main>
+    <footer>
+        <table>
+            <tr>
+                <td>© zoopetshop.by 2024 | г. Гродно, ул. Щорса, 39, каб. 5</td>
+                <td class="right">Способы оплаты товаров: банковской картой при получении;
+                    наличными при получении; оплата банковской картой онлайн</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.instagram.com/zoo.shoppet?igsh=OGh3M3E5dmwxZ2M3" target="_blank"><img
+                            src="instagram.png" alt=""></a>
+                    <a href="#"><img src="tiktok.png" alt=""></a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script type="module" src="registration2.js"></script>
+</body>
+
+</html>

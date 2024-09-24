@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="avtorization.css">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="header">
+                <img src="icon-of-shop.png" alt="">
+            </div>
+            <div class="header" id="search">
+                <img src="loop.png">
+                <input type="search" placeholder="Введите ваш запрос">
+                <button>Найти</button>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/addresses">Адреса</a></li>
+                <li><a href="/catalog">Каталог</a></li>
+                <li><a href="/avtorization">Вход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" class="avtorization-form">
+            <h2 id="enter_or_registr">Войдите или <a href="/registration">зарегистрируйтесь</a></h2><br>
+            <label for="user-name">Имя пользователя</label><br>
+            <input type="text" name="user-name" required><br><br>
+            <label for="password">Пароль</label><br>
+            <input type="password" name="password" required><br><br>
+            <button>Войти</button>
+        </form>
+    </main>
+    <footer>
+        <table>
+            <tr>
+                <td>© zoopetshop.by 2024 | г. Гродно, ул. Щорса, 39, каб. 5</td>
+                <td class="right">Способы оплаты товаров: банковской картой при получении;
+                    наличными при получении; оплата банковской картой онлайн</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.instagram.com/zoo.shoppet?igsh=OGh3M3E5dmwxZ2M3" target="_blank"><img
+                            src="instagram.png" alt=""></a>
+                    <a href="#"><img src="tiktok.png" alt=""></a>
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script type="module" src="avtorization.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+nav {
+    height: 65px;
+}
+
+#nav-catalog {
+    height: 30px;
+    background-color: #585757;
+}
+
+#nav-catalog a {
+    font-size: smaller;
+}
+
+#catalog {
+    padding: 10px;
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+/* #catalog td,
+#catalog tr {
+    border: 1px solid black;
+    border-radius: 30%;
+    padding: 10px;
+} */
+#catalog tr,
+#catalog td {
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+#catalog th a {
+    text-decoration: none;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    vertical-align: top;
+    background-color: #eeecec;
+    border-radius: 10px;
+}
+
+h3 {
+    vertical-align: bottom;
+    /* background-color: #f5caca; */
+    background-color: #eeecec;
+    border-radius: 10px;
+}
+
+.feed img,
+.treats img,
+.clothes img {
+    vertical-align: middle;
+    width: 200px;
+    height: 280px;
+}
+
+.toys img,
+.vet img {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+}
