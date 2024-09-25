@@ -1,4 +1,4 @@
-import user from './User.js';
+import {User} from './User.js';
 
 export var usersList = [];
 
@@ -9,7 +9,7 @@ function registerUser(username, phone, password) {
     //     password: password
     //     // registrationDate: new Date()
     // };
-    let newUser = new user(username, phone, password)
+    let newUser = new User(username, phone, password)
     usersList.push(newUser);
     console.log("Пользователь успешно зарегистрирован:", newUser);
     console.log("Обновленный список пользователей:", usersList);
@@ -73,7 +73,7 @@ document.getElementById('registration-form').addEventListener("submit", function
         document.getElementById('error').innerHTML = fail;
         document.getElementById('error').style.cssText = "margin-bottom: 5px; color: white; background-color:red; font-size:14px;";
     } else {
-        // fail = "";
+        fail = "";
         // counter++;
         // const obj = { user_name: name, user_phone: phone, user_password: pass, user_id: counter };
         // users.push(obj);

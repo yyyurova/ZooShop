@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вход</title>
     <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="avtorization.css">
+    <link rel="stylesheet" href="registration.css">
 </head>
 
 <body>
@@ -31,14 +31,16 @@
         </nav>
     </header>
     <main>
-        <form action="" class="avtorization-form">
-            <h2 id="enter_or_registr">Войдите или <a href="/registration">зарегистрируйтесь</a></h2><br>
-            <label for="user-name">Имя пользователя</label><br>
-            <input type="text" name="user-name" required><br><br>
-            <label for="password">Пароль</label><br>
-            <input type="password" name="password" required><br><br>
-            <button>Войти</button>
-        </form>
+        <div class="container">
+            <form action="" class="avtorization-form">
+                <h2 id="enter_or_registr">Войдите или <a href="/registration">зарегистрируйтесь</a></h2><br>
+                <label for="user-name">Имя пользователя</label><br>
+                <input class="input__fields" type="text" name="user-name" required><br><br>
+                <label for="password">Пароль</label><br>
+                <input class="input__fields" type="password" name="password" required><br><br>
+                <button class="button">Войти</button>
+            </form>
+        </div>
     </main>
     <footer>
         <table>
@@ -55,7 +57,7 @@
             </tr>
         </table>
     </footer>
-    <script type="module" src="avtorization.js"></script>
+    <!-- <script type="module" src="avtorization.js"></script> -->
 </body>
 
 </html>

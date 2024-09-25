@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="registration.css">
     <!--<script src="../js/registration.js" defer></script>-->
-   
+
 </head>
 
 <body>
@@ -33,25 +33,31 @@
         </nav>
     </header>
     <main>
-        <form id="registration-form" class="registration-form" method="post" >
-            <h2>Регистрация</h2><br>
-            <label for="user_name">Имя пользователя</label><br>
-            <input type="text" name="user_name" id="user_name" title="Не используйте !%^&*$#" required><br><br>
+        <div class="container">
+            <form id="registration-form" class="registration-form" method="post">
+                <h2>Регистрация</h2><br>
+                <label for="user_name">Имя пользователя</label><br>
+                <input class="input__fields" type="text" name="user_name" id="user_name" title="Не используйте !%^&*$#"
+                    required><br><br>
 
-            <label for="user_phone">Номер телефона</label><br>
-            <input type="text" placeholder="+375 XX XXXXXXX" maxlength="13" name="user_phone" id="user_phone" required><br><br>
+                <label for="user_phone">Номер телефона</label><br>
+                <input class="input__fields" type="text" placeholder="+375 XX XXXXXXX" maxlength="13" name="user_phone"
+                    id="user_phone" required><br><br>
 
-            <label for="password">Пароль</label><br>
-            <input type="password" name="password" id="password" title="Должен содержать как минимум 6 символов" required><br><br>
+                <label for="password">Пароль</label><br>
+                <input class="input__fields" type="password" name="password" id="password"
+                    title="Должен содержать как минимум 6 символов" required><br><br>
 
-            <label for="repass">Повторите пароль</label><br>
-            <input type="password" name="repass" id="repass" title="Должен содержать как минимум 6 символов" required><br><br>
+                <label for="repass">Повторите пароль</label><br>
+                <input class="input__fields" type="password" name="repass" id="repass"
+                    title="Должен содержать как минимум 6 символов" required><br><br>
 
-            <div id="error" name="error"></div>
+                <div id="error" name="error"></div>
 
-            <input type="submit" class="button" name="submit" value="Готово">
-            <!-- <button type="submit">Зарегистрироваться</button> -->
-        </form>
+                <input type="submit" class="button" name="submit" value="Готово">
+                <!-- <button type="submit">Зарегистрироваться</button> -->
+            </form>
+        </div>
     </main>
     <footer>
         <table>
@@ -68,7 +74,7 @@
             </tr>
         </table>
     </footer>
-    <script type="module" src="registration2.js"></script>
+    <script type="module" src="registration.js"></script>
 </body>
 
 </html>
