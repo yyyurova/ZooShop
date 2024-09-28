@@ -3,6 +3,13 @@
     padding-top: 15px;
 }
 
+#addresses tr{
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
+    margin: 10px auto;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
 .image {
     text-align: center;
     padding: 20px 5px 10px 5px;

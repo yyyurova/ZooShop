@@ -17,7 +17,7 @@
     box-sizing: inherit;
 } */
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -53,11 +53,24 @@ header {
     float: right;
 }
 
+#search img {
+    width: 28px;
+    height: 28px;
+}
+
 .header button,
 .header input {
     vertical-align: middle;
     height: 28px;
+    border: 1px solid rgb(103, 101, 101);
+    border-radius: 14px;
+    padding: 5px;
 }
+
+.header input{
+    width: 200px;
+}
+
 
 nav {
     height: 35px;
@@ -94,9 +107,10 @@ nav ul li a:hover {
     margin-left: 12%;
     margin-right: 12%;
 } */
- footer{
+footer {
     background-color: rgb(235, 235, 235);
- }
+}
+
 footer table {
     padding: 10px 5px 5px 10px;
     width: 100%;
@@ -110,3 +124,29 @@ footer table td {
 .right {
     text-align: right;
 }
+
+/* @media(min-width:800px) and (max-width:1199px){
+h2{
+    font-size: 16px;
+}
+.text{
+    font-size: 15px;
+}
+}
+
+@media(min-width:500px) and (max-width:799px){
+   
+    .text{
+        font-size: 11px;
+    }
+}
+
+
+@media(min-width:1200px){
+  
+    .text{
+        font-size: 32px;
+        flex-direction: column;
+        flex: auto;
+    }
+} */

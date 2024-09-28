@@ -1,56 +1,8 @@
-import {User} from './User.js';
 
-export var usersList = [];
 
-function registerUser(username, phone, password) {
-    // let newUser = {
-    //     username: username,
-    //     phone: phone,
-    //     password: password
-    //     // registrationDate: new Date()
-    // };
-    let newUser = new User(username, phone, password)
-    usersList.push(newUser);
-    console.log("Пользователь успешно зарегистрирован:", newUser);
-    console.log("Обновленный список пользователей:", usersList);
-}
+document.getElementById('registration-form').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-// document.getElementById('registration-form').addEventListener("submit", checkForm);
-// var counter = 0;
-// const users = [];
-// function addUser(username, password, phone) {
-//     counter++;
-//     let newUser = {
-//         name: username,
-//         pass: password,
-//         phone: phone,
-//         id: counter
-//     };
-//     users.push(newUser);
-// }
-// Изначально имеющийся список пользователей
-
-// Функция для регистрации пользователя
-
-// Обработчик события отправки формы
-document.getElementById('registration-form').addEventListener("submit", function (event) {
-    event.preventDefault(); // Предотвращаем отправку формы
-
-    //     // Получаем данные из формы
-    //     let username = document.getElementById('user_name').value;
-    //     let password = document.getElementById('password').value;
-    //     let phone = document.getElementById('user_phone').value;
-
-    //     // Регистрируем пользователя
-    //     registerUser(username, email);
-
-    //     // Очищаем форму
-    //     event.target.reset();
-    // });
-
-    // function checkForm(event) {
-
-    //     event.preventDefault();
     let form = document.getElementById('registration-form');
 
     let name = form.user_name.value;
@@ -74,22 +26,31 @@ document.getElementById('registration-form').addEventListener("submit", function
         document.getElementById('error').style.cssText = "margin-bottom: 5px; color: white; background-color:red; font-size:14px;";
     } else {
         fail = "";
-        // counter++;
-        // const obj = { user_name: name, user_phone: phone, user_password: pass, user_id: counter };
-        // users.push(obj);
-        // console.log(obj);
-        // registerUser(name, phone, pass);
-        // alert("Все данные корректно заполнены");
-        // window.location = 'avtorization.html';
-        // // console.log(users);
-        // event.target.reset();
 
-        registerUser(name, phone, pass);
-        alert("Все данные корректно заполнены");
-        window.location = 'avtorization.html';
-        // Очищаем форму
-        // event.target.reset();
-    }
-});
-// console.log(users);
-// module.exports = { users, addUser };
+        const formData = new FormData(this);
+
+        // Преобразуем FormData в объект для удобства
+        const data = Object.fromEntries(formData.entries());
+
+        // Отправляем данные на сервер
+        fetch('/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(result => {
+                // console.log('Success:', result);
+                // alert("User registered");
+                alert(result.message);
+                if (result.redirectUrl) {
+                    window.location.href = result.redirectUrl; // Перенаправление при успешной регистрации
+                }
+            })
+            .catch(error => {
+                alert(error);
+                console.error('Error:', error);
+            });
+    }});
