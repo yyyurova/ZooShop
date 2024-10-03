@@ -40,7 +40,7 @@ app.post('/register', (req, res) => {
         password: password
     };
 
-    console.log('User registered:', user);
+    // console.log('User registered:', user);
     return res.status(200).json({ message: "Регистрация успешна", redirectUrl: "/avtorization" });
 });
 

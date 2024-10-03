@@ -7,6 +7,8 @@
     <title>Вход</title>
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="registration.css">
+
+    <link rel="shortcut icon" href="icon-page.png">
 </head>
 
 <body>
@@ -32,13 +34,27 @@
     </header>
     <main>
         <div class="container">
-            <form action="" class="avtorization-form">
+            <form  class="avtorization-form" id="avtorization-form" method="post">
                 <h2 id="enter_or_registr">Войдите или <a href="/registration">зарегистрируйтесь</a></h2><br>
-                <label for="user-name">Имя пользователя</label><br>
-                <input class="input__fields" type="text" name="user-name" required><br><br>
+                <div class="radio-inputs">
+                    <label class="radio">
+                      <input type="radio" name="radio" checked="" id="name" value="1">
+                      <span class="name">Имя</span>
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="radio" id="phone" value="2">
+                      <span class="name">Номер телефона</span>
+                    </label>
+          
+                  </div>
+                <label for="user_name" id="choice">Имя пользователя</label><br>
+                <input class="input__fields" type="text" name="user_name" required><br><br>
                 <label for="password">Пароль</label><br>
                 <input class="input__fields" type="password" name="password" required><br><br>
-                <button class="button">Войти</button>
+                <div id="error" name="error"></div>
+                <button type="submit" name="submit" class="button">Войти</button>
+
+               
             </form>
         </div>
     </main>
@@ -57,6 +73,7 @@
             </tr>
         </table>
     </footer>
+    <script src="avtorization.js"></script>
 </body>
 
 </html>

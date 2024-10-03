@@ -7,77 +7,100 @@
     <title>Главная</title>
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="index.css">
+
+    <link rel="shortcut icon" href="icon-page.png">
+
 </head>
 
 <body>
-    <header>
-        <div id="header">
-            <div class="header">
-                <img src="icon-of-shop.png" alt="">
-            </div>
-            <div class="header" id="search">
-                <img src="loop.png">
-                <input type="search" placeholder="Введите ваш запрос">
-                <button>Найти</button>
-            </div>
+    <div id="loader">
+        <div class="spinner">
+          <div></div>   
+          <div></div>    
+          <div></div>    
+          <div></div>    
+          <div></div>    
+          <div></div>    
+          <div></div>    
+          <div></div>    
+          <div></div>    
+          <div></div>    
         </div>
-        <nav>
-            <ul>
-                <li><a href="/">Главная</a></li>
-                <li><a href="/addresses">Адреса</a></li>
-                <li><a href="/catalog">Каталог</a></li>
-                <li><a href="/avtorization">Вход</a></li>
-            </ul>
-        </nav>
-    </header>
+    </div>
+    <div id="content" style="display: none;">
+        <header>
+            <div id="header">
+                <div class="header">
+                    <img src="icon-of-shop.png" alt="">
+                </div>
+                <div class="header" id="search">
+                    <img src="loop.png">
+                    <input type="search" placeholder="Введите ваш запрос">
+                    <button>Найти</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/addresses">Адреса</a></li>
+                    <li><a href="/catalog">Каталог</a></li>
+                    <li><a href="/avtorization">Вход</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <h2>Специальные предложения от ZooPetShop.by</h2>
-        <table id="sale">
-            <tr>
-                <td class="image"><a href="catalog.html"><img src="disc1.jpg" alt=""></a></td>
-                <td class="text"><b>Акция выходного дня в нашей ветеринарной аптеке!</b><br>
-                    Только по выходным в нашем зоомагазине вы можете воспользоваться уникальной возможностью приобрести
-                    ветеринарные препараты со скидкой 20%! Заботьтесь о здоровье своих питомцев и экономьте на покупках.
-                    <br>
-                    <i> Что вас ждет:</i><br>
-                    Скидка 25% на все ветеринарные препараты при покупке на сумму от 25 рублей. <br>
-                    Консультации ветеринарного врача бесплатно. <br>
-                    Подарки при покупке на сумму от 60 рублей. <br>
-                    Не упустите шанс позаботиться о своих любимцах и сэкономить! Ждем вас каждую субботу и воскресенье в
-                    нашем зоомагазине.
-                </td>
-            </tr>
-            <tr>
-                <td class="text"><b>Специальная акция в нашем зоомагазине!</b><br>
-                    При покупке продукции <b>Purina ProPlan</b> на сумму <i>от 50 рублей</i>, получите подарок! <br>
-                    <i>Что вас ждет:</i> <br>
-                    Широкий ассортимент продукции Purina ProPlan для ваших любимцев. <br>
-                    Подарок при каждой покупке от 50 рублей. <br>
-                    Консультации по выбору продукции от наших специалистов. <br>
-                    Не упустите шанс порадовать своих питомцев и получить приятный бонус! Акция действует до конца
-                    месяца. Ждем вас в нашем зоомагазине!
-                </td>
-                <td class="image"> <a href="catalog.html"><img src="disc2.jpg" alt=""></a></td>
-            </tr>
-        </table>
-    </main>
+        <main>
+            <h2>Специальные предложения от ZooPetShop.by</h2>
+            <table id="sale">
+                <tr>
+                    <td class="image"><a href="catalog.html"><img src="disc1.jpg" alt=""></a></td>
+                    <td class="text"><b>Акция выходного дня в нашей ветеринарной аптеке!</b><br>
+                        Только по выходным в нашем зоомагазине вы можете воспользоваться уникальной возможностью
+                        приобрести
+                        ветеринарные препараты со скидкой 20%! Заботьтесь о здоровье своих питомцев и экономьте на
+                        покупках.
+                        <br>
+                        <i> Что вас ждет:</i><br>
+                        Скидка 25% на все ветеринарные препараты при покупке на сумму от 25 рублей. <br>
+                        Консультации ветеринарного врача бесплатно. <br>
+                        Подарки при покупке на сумму от 60 рублей. <br>
+                        Не упустите шанс позаботиться о своих любимцах и сэкономить! Ждем вас каждую субботу и
+                        воскресенье в
+                        нашем зоомагазине.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text"><b>Специальная акция в нашем зоомагазине!</b><br>
+                        При покупке продукции <b>Purina ProPlan</b> на сумму <i>от 50 рублей</i>, получите подарок! <br>
+                        <i>Что вас ждет:</i> <br>
+                        Широкий ассортимент продукции Purina ProPlan для ваших любимцев. <br>
+                        Подарок при каждой покупке от 50 рублей. <br>
+                        Консультации по выбору продукции от наших специалистов. <br>
+                        Не упустите шанс порадовать своих питомцев и получить приятный бонус! Акция действует до конца
+                        месяца. Ждем вас в нашем зоомагазине!
+                    </td>
+                    <td class="image"> <a href="catalog.html"><img src="disc2.jpg" alt=""></a></td>
+                </tr>
+            </table>
+        </main>
 
-    <footer>
-        <table>
-            <tr>
-                <td>© zoopetshop.by 2024 | г. Гродно, ул. Щорса, 39, каб. 5</td>
-                <td class="right">Способы оплаты товаров: банковской картой при получении;
-                    наличными при получении; оплата банковской картой онлайн</td>
-            </tr>
-            <tr>
-                <td><a href="https://www.instagram.com/zoo.shoppet?igsh=OGh3M3E5dmwxZ2M3" target="_blank"><img src="instagram.png"
-                            alt=""></a>
-                    <a href="#"><img src="tiktok.png" alt=""></a>
-                </td>
-            </tr>
-        </table>
-    </footer>
+        <footer>
+            <table>
+                <tr>
+                    <td>© zoopetshop.by 2024 | г. Гродно, ул. Щорса, 39, каб. 5</td>
+                    <td class="right">Способы оплаты товаров: банковской картой при получении;
+                        наличными при получении; оплата банковской картой онлайн</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.instagram.com/zoo.shoppet?igsh=OGh3M3E5dmwxZ2M3" target="_blank"><img
+                                src="instagram.png" alt=""></a>
+                        <a href="#"><img src="tiktok.png" alt=""></a>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+    <script src="loader.js"></script>
 </body>
 
 </html>
