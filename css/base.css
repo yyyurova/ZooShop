@@ -214,11 +214,13 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-/* main{
-    width: 86%;
-    margin-left: 12%;
-    margin-right: 12%;
-} */
+main {
+    width: 90%;
+    margin: 0 auto;
+    /* margin-left: 12%;
+    margin-right: 12%; */
+}
+
 footer {
     background-color: rgb(235, 235, 235);
 }
@@ -263,3 +265,48 @@ h2{
         flex: auto;
     }
 } */
+
+@media(max-width:550px) {
+    main {
+        width: 100%;
+    }
+
+    footer table td {
+        font-size: 13px;
+    }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width:470px) {
+    nav {
+        height: 30px;
+    }
+
+    nav a {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    #header img {
+        width: 29px;
+        height: 29px;
+    }
+
+    .header input {
+        width: 130px;
+        font-size: 11px;
+    }
+
+    .header button {
+        font-size: 11px;
+        text-align: center;
+    }
+}
